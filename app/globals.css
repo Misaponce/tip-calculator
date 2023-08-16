@@ -2,26 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: customfont;
+  src: url(../fonts/SpaceMono-Regular.ttf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --Font-size: 24px; /*Form Input*/
 }
+
+/* * {
+  border: 1px solid red;
+} */
+
+/* General Style */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--Light-grayish-cyan);
+  font-size: var(--Font-size);
+  font-family: customfont, sans-serif !important;
+}
+
+/* Splitter Style */
+
+.splitter {
+  color: var(--Very-dark-cyan);
+}
+
+.splitter::before {
+  content: "TTER";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  border-left: 2px solid transparent;
+}
+
+/* Card Style */
+
+.card {
+  background-color: var(--White);
+}
+
+/* btn Style */
+
+.btn-tip {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  transition: .2s all ease-in-out;
+}
+
+.btn-tip:hover {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+.btn-reset {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  transition: .2s all ease-in-out;
+}
+
+.btn-reset:hover {
+  background-color: var(--Light-grayish-cyan);
+}
+
+/* Display Style */
+
+.result-container {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+}
+
+.display-num {
+  color: var(--Strong-cyan);
+}
+
+/* Form and Input style  */
+
+.form-input {
+  border: 0;
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Dark-grayish-cyan);
+}
+
+.form-input:focus {
+  --tw-ring-color: var(--Dark-grayish-cyan);
 }
