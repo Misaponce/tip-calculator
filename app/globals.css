@@ -65,6 +65,7 @@ body {
   color: var(--Very-dark-cyan);
 }
 
+
 .btn-reset {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
@@ -89,11 +90,11 @@ body {
 /* Form and Input style  */
 
 .form-input {
-  border: 0;
+  /* border: 0; */
   background-color: var(--Very-light-grayish-cyan);
   color: var(--Dark-grayish-cyan);
 }
 
 .form-input:focus {
-  --tw-ring-color: var(--Dark-grayish-cyan);
+  --tw-ring-color: var(--Dark-grayish-cyan) !important;
 }

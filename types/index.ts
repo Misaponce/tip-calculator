@@ -7,6 +7,8 @@ export interface CustomFormProps {
     placeHolder: string;
     formId?: string;
     formStyle?: string;
+    inputError: boolean;
+    errorMessage: string;
     onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -22,6 +24,7 @@ export interface CustomInputProps {
     inputId:  string;
     value: number;
     type: string;
+    inputError: boolean;
     onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
