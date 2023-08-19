@@ -12,15 +12,18 @@
   --Very-dark-cyan: hsl(183, 100%, 15%);
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
   --Grayish-cyan: hsl(184, 14%, 56%);
-  --Light-grayish-cyan: hsl(185, 41%, 84%);
-  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --Light-grayish-cyan: hsl(185, 50%, 80%);
+  --Very-light-grayish-cyan: hsl(180, 50%, 95%);
   --White: hsl(0, 0%, 100%);
   --Font-size: 24px; /*Form Input*/
 }
 
-/* * {
-  border: 1px solid red;
-} */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
 
 /* General Style */
 
@@ -97,4 +100,14 @@ body {
 
 .form-input:focus {
   --tw-ring-color: var(--Dark-grayish-cyan) !important;
+}
+
+/* Footer Style */
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }

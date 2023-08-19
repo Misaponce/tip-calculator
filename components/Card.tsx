@@ -86,7 +86,7 @@ const Card = () => {
 
 
   return (
-    <div className='w-full sm:w-[850px] flex flex-col sm:flex-row flex-grow sm:gap-2 rounded-t-2xl sm:rounded-2xl mt-5 sm:mt-10 p-4 card'>
+    <div className='w-full sm:w-[850px] flex flex-col sm:flex-row flex-grow sm:gap-2 rounded-t-2xl sm:rounded-2xl mt-5 mb-5 p-4 card'>
         <div className='tip-container flex-1 flex flex-col justify-center rounded-t-2xl sm:rounded-2xl'>
           <CustomForm 
             label='Bill'
